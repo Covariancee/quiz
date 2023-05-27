@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ResuldScreen extends StatelessWidget {
-  const ResuldScreen({super.key, required this.choosenAnswers});
+class ResultsScreen extends StatelessWidget {
+  const ResultsScreen({super.key, required this.choosenAnswers});
 
   final List<String> choosenAnswers;
   @override
@@ -13,7 +13,7 @@ class ResuldScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('data'),
+            Text(choosenAnswers.toString()),
             const SizedBox(height: 30),
             const Text('data'),
             const SizedBox(height: 30),
